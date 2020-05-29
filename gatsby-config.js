@@ -33,7 +33,7 @@ module.exports = {
         // contentTypes: [`jobs`, `projects`, `blogs`, ],
         //singleTypes:[`about` ]
         contentTypes: [`jobs`],
-        // singleTypes: [`about`],
+        singleTypes: [`about`],
       },
     },
     {

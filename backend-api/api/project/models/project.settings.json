@@ -14,7 +14,7 @@
       "required": true
     },
     "description": {
-      "type": "string",
+      "type": "text",
       "required": true
     },
     "image": {
@@ -30,11 +30,11 @@
     },
     "github": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "url": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "featured": {
       "type": "boolean",
