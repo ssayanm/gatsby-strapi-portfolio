@@ -39,13 +39,14 @@
         "gatsby",
         "javascript",
         "react",
-        "html"
+        "html",
+        "css"
       ],
       "default": "gatsby",
       "required": true
     },
     "desc": {
-      "type": "string",
+      "type": "text",
       "required": true
     },
     "date": {
