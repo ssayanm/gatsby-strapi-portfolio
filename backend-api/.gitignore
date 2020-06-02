@@ -114,3 +114,7 @@ exports
 .cache
 build
 package-lock.json
+
+/extensions/upload/config/settings.json
+
+/extensions/upload/config/settings
