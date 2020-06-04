@@ -23,7 +23,7 @@ export const query = graphql`
       nodes {
         slug
         desc
-
+        price
         id
         title
         category
@@ -31,6 +31,7 @@ export const query = graphql`
           childImageSharp {
             fluid {
               ...GatsbyImageSharpFluid
+              src
             }
           }
         }

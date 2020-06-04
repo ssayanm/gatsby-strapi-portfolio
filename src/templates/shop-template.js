@@ -5,7 +5,7 @@ import ReactMarkdown from "react-markdown"
 import SEO from "../components/SEO"
 
 const ShopTemplate = ({ data }) => {
-  const { content, title, desc } = data.blog
+  const { content, title, desc, price } = data.product
   return (
     <Layout>
       <SEO title={title} description={desc} />
@@ -25,10 +25,11 @@ const ShopTemplate = ({ data }) => {
 
 export const query = graphql`
   query GetSingleProduct($slug: String) {
-    blog: strapiProducts(slug: { eq: $slug }) {
+    product: strapiProducts(slug: { eq: $slug }) {
       content
       title
       desc
+      price
     }
   }
 `
