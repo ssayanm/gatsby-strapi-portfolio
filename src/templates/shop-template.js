@@ -4,7 +4,7 @@ import Layout from "../components/Layout"
 import ReactMarkdown from "react-markdown"
 import SEO from "../components/SEO"
 
-const BlogTemplate = ({ data }) => {
+const ShopTemplate = ({ data }) => {
   const { content, title, desc } = data.blog
   return (
     <Layout>
@@ -14,8 +14,8 @@ const BlogTemplate = ({ data }) => {
           <article className="blog-content">
             <ReactMarkdown source={content} />
           </article>
-          <Link to="/blog" className="btn center-btn">
-            blog
+          <Link to="/shop" className="btn center-btn">
+            shop
           </Link>
         </div>
       </section>
@@ -24,8 +24,8 @@ const BlogTemplate = ({ data }) => {
 }
 
 export const query = graphql`
-  query GetSingleBlog($slug: String) {
-    blog: strapiBlogs(slug: { eq: $slug }) {
+  query GetSingleProduct($slug: String) {
+    blog: strapiProducts(slug: { eq: $slug }) {
       content
       title
       desc
@@ -33,4 +33,4 @@ export const query = graphql`
   }
 `
 
-export default BlogTemplate
+export default ShopTemplate

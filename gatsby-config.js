@@ -30,7 +30,7 @@ module.exports = {
       options: {
         apiURL: `http://localhost:1337`,
         queryLimit: 1000, // Default to 100
-        contentTypes: [`jobs`, `projects`, `blogs`],
+        contentTypes: [`jobs`, `projects`, `blogs`, `products`],
         singleTypes: [`about`],
       },
     },
@@ -46,6 +46,13 @@ module.exports = {
             family: `Open Sans`,
           },
         ],
+      },
+    },
+    {
+      resolve: "gatsby-plugin-snipcartv3",
+      options: {
+        apiKey:
+          "NDEwNmI3OWQtZmI0OC00OThjLWFjYzctMDE4NDI1Zjg3NTg4NjM3MjY4NjQxNTkyMDE3Nzk5",
       },
     },
   ],
