@@ -5,7 +5,7 @@ import ReactMarkdown from "react-markdown"
 import SEO from "../components/SEO"
 
 const ShopTemplate = ({ data }) => {
-  const { content, title, desc, price } = data.product
+  const { content, title, desc } = data.product
   return (
     <Layout>
       <SEO title={title} description={desc} />

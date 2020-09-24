@@ -8,8 +8,8 @@ module.exports = {
   siteMetadata: {
     title: "WebDev Portfolio",
     description: "This is WebDev Portfolio Site",
-    author: "@sayan_m87",
-    twitterUsername: "@sayan_m87",
+   author: `@sayan_m_`,
+    twitterUsername: "@sayan_m_",
     image: "/twitter-img.png",
     siteUrl: "https://sayanmukherjee.com",
   },
