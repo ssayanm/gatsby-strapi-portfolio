@@ -3,26 +3,9 @@ import Image from "gatsby-image"
 import { Link } from "gatsby"
 import { graphql, useStaticQuery } from "gatsby"
 import SocialLinks from "../constants/socialLinks"
-
-const query = graphql`
-  {
-    file(relativePath: { eq: "hero-image.png" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }
-`
+import { StaticImage } from "gatsby-plugin-image"
 
 const Hero = () => {
-  const {
-    file: {
-      childImageSharp: { fluid },
-    },
-  } = useStaticQuery(query)
-
   return (
     <header className="hero">
       <div className="section-center hero-center">
@@ -37,7 +20,11 @@ const Hero = () => {
             <SocialLinks />
           </div>
         </article>
-        <Image fluid={fluid} className="hero-img" />
+        <StaticImage
+          src="../assets/hero-image.png"
+          alt="A dinosaur"
+          className="hero-img"
+        />
       </div>
     </header>
   )

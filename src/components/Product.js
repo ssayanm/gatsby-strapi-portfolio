@@ -6,23 +6,21 @@ const Product = ({ id, title, image, category, price, slug, desc }) => {
   return (
     // <Link to={`/products/${slug}`} key={id} className="blog">
     <article className="blog">
-      {image && (
-        <Image fluid={image.childImageSharp.fluid} className="blog-img" />
-      )}
+      {image && <Image fluid={image.url} className="blog-img" />}
 
       <div className="blog-card">
         <h4>{title}</h4>
         <p>{desc}</p>
         <div className="blog-footer">
           <p>${price}</p>
-          {console.log(image.childImageSharp.fluid.src)}
+          {console.log(image.url)}
           <button
             className="snipcart-add-item btn"
             data-item-id={id}
             data-item-price={price}
             data-item-url="/paintings/starry-night"
             data-item-description={desc}
-            data-item-image={image.childImageSharp.fluid.src}
+            data-item-image={image.url}
             data-item-name={title}
           >
             Add to cart

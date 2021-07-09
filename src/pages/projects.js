@@ -27,11 +27,7 @@ export const query = graphql`
         title
         url
         image {
-          childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
-            }
-          }
+          url
         }
         stack {
           id
